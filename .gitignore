@@ -1,0 +1,11 @@
+node_modules/
+.sites-runtime/
+.env
+.env.*
+*.log
+
+dist/spectate/game/index.wasm
+
+diana-src/node_modules
+
+dist/spectate/game/index.wasm.gz

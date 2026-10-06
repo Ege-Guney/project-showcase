@@ -1,0 +1,13 @@
+{
+  "fixture": "synthetic",
+  "decision_id": "meridian-review-04",
+  "project": "meridian",
+  "status": "WAITING_FOR_REVIEW",
+  "checks": {
+    "accessibility": "OPEN",
+    "security": "REVIEWED",
+    "change_spec": "CURRENT"
+  },
+  "reason": "Keyboard navigation must pass before release approval.",
+  "executor_connected": false
+}

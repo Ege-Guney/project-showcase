@@ -1,0 +1,1 @@
+import React from "react";import {createRoot} from "react-dom/client";import {DianaPreview} from "./holo";import "./global.css";createRoot(document.getElementById("root")!).render(<DianaPreview/>);

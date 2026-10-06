@@ -1,0 +1,14 @@
+{
+  "fixture": "synthetic",
+  "change_id": "meridian-change-04",
+  "target": "samples/onboarding-copy.md",
+  "change": {
+    "before": "Submit",
+    "after": "Submit for review"
+  },
+  "expected_effect": "Clarifies that submission creates a review request.",
+  "verification": "Independent content comparison",
+  "rollback": "Restore the original two-word control label.",
+  "status": "EXPIRED",
+  "executor_connected": false
+}

@@ -1,0 +1,20 @@
+{
+  "fixture": "synthetic",
+  "commitment": "Review the Meridian change",
+  "worker": {
+    "role": "Draft",
+    "state": "COMPLETE",
+    "output": "change-spec.json"
+  },
+  "reviewer": {
+    "role": "Critique",
+    "state": "OPEN",
+    "finding": "Keyboard navigation requires review."
+  },
+  "witness": {
+    "role": "Verify",
+    "state": "WAITING",
+    "proof": "Compare the final artifact with the approved specification."
+  },
+  "executor_connected": false
+}
