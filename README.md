@@ -26,6 +26,72 @@ To rebuild the DIANA interface, install the pinned dependencies in `diana-src/` 
 
 Designed and built by [Ege Guney](https://github.com/Ege-Guney). The SpectateAI future-direction artwork was generated with AI as a clearly labeled concept preview.
 
-![SpectateAI future visual concept](dist/images/spectateai-concept.png)
+## Working prototype screenshots
 
-*Concept artwork, not a screenshot of implemented graphics.*
+These are actual application captures, presented with consistent framing and short workflow captions. The interface content is preserved.
+
+### ScoreVest — research in a native iOS interface
+
+![ScoreVest working prototype presentation](dist/images/scorevest-screenshot-presentation.jpg)
+
+<details>
+<summary>Inspect the original iOS captures</summary>
+
+<table><tr><td><img src="dist/images/scorevest-working-home.png" alt="Working ScoreVest market briefing" width="260"></td><td><img src="dist/images/scorevest-working-research.png" alt="Working ScoreVest evidence review" width="260"></td></tr><tr><td>Market briefing</td><td>Ticker evidence and uncertainty</td></tr></table>
+
+</details>
+
+*Actual iOS development captures from an earlier working research build. Home uses demo fixtures; market figures are sample development data.*
+
+### DIANA — inspect evidence before approving work
+
+![DIANA working demo presentation](dist/images/diana-screenshot-presentation.jpg)
+
+*Captured from the public Holo demo with synthetic Meridian examples. [Full workspace](dist/images/diana-working-demo.jpg) · [Privacy workbench](dist/images/diana-privacy-demo.jpg).*
+
+### SpectateAI — make agent behaviour observable
+
+![SpectateAI working prototype presentation](dist/images/spectateai-screenshot-presentation.jpg)
+
+*Actual Godot prototype with 12 residents and interactive playback controls.*
+
+<details>
+<summary>Inspect a resident in the working demo</summary>
+
+![Actual resident inspector](dist/images/spectateai-working-inspector.png)
+
+</details>
+
+## Optional future concepts
+
+These secondary AI-generated images explore possible future directions. They are separate from the working screenshots above.
+
+
+<details>
+<summary>Future ScoreVest design direction</summary>
+
+![Future ScoreVest concept](dist/images/scorevest-concept-human.png)
+
+*AI-generated concept. Illustrative data and proposed interface.*
+
+</details>
+
+
+<details>
+<summary>Future DIANA design direction</summary>
+
+![Future DIANA concept](dist/images/diana-concept.png)
+
+*AI-generated concept. Fictional workflow and proposed interface.*
+
+</details>
+
+
+<details>
+<summary>Future SpectateAI design direction</summary>
+
+![Future SpectateAI concept](dist/images/spectateai-concept.png)
+
+*AI-generated concept. Proposed graphics and interface.*
+
+</details>
