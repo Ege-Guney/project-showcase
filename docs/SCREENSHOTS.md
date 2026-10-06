@@ -1,6 +1,6 @@
 # Screenshot provenance
 
-The primary portfolio visuals are authentic runtime captures. Presentation changes consist of layout, borders, paired screens, and explanatory captions; application content has not been AI-reconstructed. Click images to view original captures.
+ScoreVest and DIANA use authentic runtime captures as their primary visuals. SpectateAI features its labeled future concept by design, with authentic gameplay captures in its expandable details. Presentation changes consist of layout, borders, paired screens, and explanatory captions; application content has not been AI-reconstructed. Click images to view original captures.
 
 | Public asset | Capture source | Scope |
 | --- | --- | --- |

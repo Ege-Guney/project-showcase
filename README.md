@@ -26,9 +26,9 @@ To rebuild the DIANA interface, install the pinned dependencies in `diana-src/` 
 
 Designed and built by [Ege Guney](https://github.com/Ege-Guney). The SpectateAI future-direction artwork was generated with AI as a clearly labeled concept preview.
 
-## Working prototype screenshots
+## Project visuals
 
-These are actual application captures, presented with consistent framing and short workflow captions. The interface content is preserved.
+ScoreVest and DIANA lead with actual application captures, presented with consistent framing and short workflow captions. SpectateAI leads with its clearly labeled future art direction, with working gameplay captures available below.
 
 ### ScoreVest — research in a native iOS interface
 
@@ -49,11 +49,20 @@ These are actual application captures, presented with consistent framing and sho
 
 *Captured from the public Holo demo with synthetic Meridian examples. [Full workspace](dist/images/diana-working-demo.jpg) · [Privacy workbench](dist/images/diana-privacy-demo.jpg).*
 
-### SpectateAI — make agent behaviour observable
+### SpectateAI — an inspectable village, with a future art direction
 
-![SpectateAI working prototype presentation](dist/images/spectateai-screenshot-presentation.jpg)
+![SpectateAI future visual concept](dist/images/spectateai-concept.png)
+
+*AI-generated future visual concept. The playable demo uses utility-based AI and current prototype graphics.*
+
+<details>
+<summary>See the working gameplay prototype</summary>
+
+![Actual SpectateAI gameplay presentation](dist/images/spectateai-screenshot-presentation.jpg)
 
 *Actual Godot prototype with 12 residents and interactive playback controls.*
+
+</details>
 
 <details>
 <summary>Inspect a resident in the working demo</summary>
@@ -83,15 +92,5 @@ These secondary AI-generated images explore possible future directions. They are
 ![Future DIANA concept](dist/images/diana-concept.png)
 
 *AI-generated concept. Fictional workflow and proposed interface.*
-
-</details>
-
-
-<details>
-<summary>Future SpectateAI design direction</summary>
-
-![Future SpectateAI concept](dist/images/spectateai-concept.png)
-
-*AI-generated concept. Proposed graphics and interface.*
 
 </details>
