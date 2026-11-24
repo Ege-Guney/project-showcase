@@ -3,24 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Perch · A pet fruit fly driven by a connectome model · Ege Guney</title>
+<title>Perch · Ege Guney</title>
 <meta name="description" content="Perch: raise a fruit fly whose every reaction replays a recorded trial of a spiking model run on the BANC connectome of one real fly.">
 <meta property="og:title" content="Perch · a pet fruit fly with a real fly's wiring">
 <meta property="og:image" content="../images/perch-overview.jpg">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#08101f">
 <link rel="stylesheet" href="../site.css">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="../">← Ege Guney<span>Selected projects</span></a>
+    <a class="brand" href="../">Ege Guney</a>
     <nav class="nav">
+      <a href="../#projects">All projects</a>
       <a class="opt" href="#how">How it works</a>
-      <a class="opt" href="#credits">Credits</a>
-      <a href="app/">Open full screen ↗</a>
+      <a href="app/">Open full screen</a>
     </nav>
   </div>
 </header>
@@ -28,10 +26,10 @@
 <main>
   <div class="page-hero">
     <div class="wrap">
-      <div class="label"><b>03</b> · Connectome simulation · Interactive prototype</div>
+      <p class="kicker">Connectome simulation</p>
       <h1>Perch</h1>
       <p class="lede">A pet fruit fly driven by a model of a real fly's brain. Every reaction replays a recorded trial of a spiking model run on the mapped wiring of one real fly, and any reaction can be opened to watch it travel through her brain.</p>
-      <div class="actions only-m" style="margin-top:22px"><a class="btn primary" href="app/">Open Perch <span class="arr">→</span></a></div>
+      <div class="actions only-m" style="margin-top:22px"><a class="btn primary" href="app/">Open Perch</a></div>
     </div>
   </div>
 
@@ -39,16 +37,16 @@
     <div class="wrap cols">
       <div class="phone-wrap">
         <div class="phone"><iframe src="app/" title="Perch, interactive demo" allow="fullscreen; accelerometer; gyroscope" loading="lazy"></iframe></div>
-        <p class="phone-cap">Live app · designed for a phone · <a href="app/" style="color:var(--accent)">open full screen</a></p>
+        <p class="phone-cap">The live app, designed for a phone. <a class="inline" href="app/">Open it full screen</a></p>
       </div>
       <div id="how">
-        <div class="stats">
+        <div class="numbers">
           <div><b>169,078</b><span>neurons</span></div>
           <div><b>3,542</b><span>recorded trials</span></div>
           <div><b>3</b><span>sister flies</span></div>
           <div><b>23</b><span>situations</span></div>
         </div>
-        <div class="label" style="margin:26px 0 10px">How it works</div>
+        <h2 class="h" style="margin-top:32px">How it works</h2>
         <ol class="steps">
           <li><div><b>Real wiring.</b> The brain and nerve cord of one adult female fruit fly, mapped cell by cell by electron microscopy (BANC v888).</div></li>
           <li><div><b>A spiking model.</b> A leaky integrate-and-fire network after Shiu et al. 2024 runs on that wiring at 0.1 ms steps, offline in Python with a Numba kernel.</div></li>
@@ -58,8 +56,8 @@
         </ol>
         <p class="note">Every on-screen claim is tagged <b>BRAIN</b> (model output on real wiring), <b>REPLAY</b> (a stored trial, re-run) or <b>DESIGN</b> (a choice made for the app). Nothing in the app is a BANC measurement.</p>
         <div class="actions" style="margin-top:22px">
-          <a class="btn primary" href="app/">Open Perch <span class="arr">→</span></a>
-          <a class="btn" href="https://github.com/Ege-Guney/project-showcase/tree/main/dist/perch" target="_blank" rel="noopener">Source ↗</a>
+          <a class="btn primary" href="app/">Open Perch</a>
+          <a class="btn" href="https://github.com/Ege-Guney/project-showcase/tree/main/dist/perch" target="_blank" rel="noopener">View the source</a>
         </div>
       </div>
     </div>
@@ -67,7 +65,7 @@
 
   <section style="padding-top:16px">
     <div class="wrap">
-      <div class="sec-head"><div><div class="label">From the live app</div><h2>Inside Perch</h2></div></div>
+      <div class="sec"><h2>Inside Perch</h2><p>Captured from the live app.</p></div>
       <div class="shots">
         <figure><img src="../images/perch-jar.jpg" alt="Her jar with a fig" loading="lazy" width="430" height="900"><figcaption>Her jar: give a drop, offer a fingertip, tilt it.</figcaption></figure>
         <figure><img src="../images/perch-reaction.jpg" alt="A reaction explained in plain words" loading="lazy" width="430" height="900"><figcaption>Each reaction names the cells behind it.</figcaption></figure>
@@ -80,9 +78,8 @@
   <section id="credits" style="padding-top:16px">
     <div class="wrap cols">
       <div>
-        <div class="label">Credits and licences</div>
-        <h2 style="font-size:24px;letter-spacing:-.02em;margin:8px 0 12px">Built on public science</h2>
-        <p class="prose" style="color:var(--ink-2)">Perch is a non-commercial portfolio prototype. The data and models below stay under their own licences; please keep these credits wherever it is shared.</p>
+        <h2 class="h">Built on public science</h2>
+        <p style="color:var(--ink-2);margin:0">Perch is a non-commercial portfolio prototype. The data and models below stay under their own licences; please keep these credits wherever it is shared.</p>
       </div>
       <ul class="credits">
         <li><b>BANC connectome</b> (her wiring): Bates, Phelps, Kim, Yang et al. 2026, <i>Nature</i>, <a href="https://doi.org/10.1038/s41586-026-10735-w" target="_blank" rel="noopener">doi:10.1038/s41586-026-10735-w</a>. Data: Harvard Dataverse <a href="https://doi.org/10.7910/DVN/7WTH1N" target="_blank" rel="noopener">doi:10.7910/DVN/7WTH1N</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Cell-type names come from annotations made on FlyWire and are for non-commercial use. <a href="app/brain/NOTICE.md">Notice</a></li>
@@ -96,8 +93,8 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Ege Guney · <a href="../">All projects</a></span>
-    <span><a href="https://github.com/Ege-Guney" target="_blank" rel="noopener">GitHub</a> · <a href="https://linkedin.com/in/egeguney" target="_blank" rel="noopener">LinkedIn</a></span>
+    <span><a href="../">Ege Guney</a></span>
+    <span><a href="../#projects">All projects</a> &nbsp; <a href="https://github.com/Ege-Guney" target="_blank" rel="noopener">GitHub</a></span>
   </div>
 </footer>
 </body>

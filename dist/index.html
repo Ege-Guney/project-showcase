@@ -3,143 +3,131 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ege Guney · Software Engineering and Analytics</title>
-<meta name="description" content="Selected projects by Ege Guney: ScoreVest (financial research), DIANA (governed AI workflows) and Perch (a pet fruit fly driven by a connectome model).">
-<meta property="og:title" content="Ege Guney · Selected projects">
-<meta property="og:description" content="ScoreVest, DIANA and Perch: research tools, governed AI and connectome simulation.">
-<meta property="og:image" content="images/perch-overview.jpg">
+<title>Ege Guney · Projects</title>
+<meta name="description" content="Three working prototypes that show their work: ScoreVest, DIANA and Perch.">
+<meta property="og:title" content="Prototypes that show their work">
+<meta property="og:description" content="A research app that cites its sources, an AI workspace that waits for approval, and a fruit fly driven by a model of a real brain.">
+<meta property="og:image" content="hero/og.jpg">
+<meta name="theme-color" content="#08101f">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./">Ege Guney<span>Software engineering · Analytics</span></a>
-    <nav class="nav">
+    <a class="brand" href="./">Ege Guney</a>
+    <nav class="nav" aria-label="Main">
       <a href="#projects">Projects</a>
-      <a class="opt" href="#more">Other work</a>
-      <a href="https://github.com/Ege-Guney" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="https://linkedin.com/in/egeguney" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="opt" href="#also">Also built</a>
+      <a href="https://github.com/Ege-Guney" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <div class="hero">
-    <div class="wrap">
-      <div class="label"><b>●</b> Agentic software engineering · Strategic analytics</div>
-      <h1>Ege Guney</h1>
-      <p class="lede">I build enterprise payment systems at TD and independent prototypes that make complex systems inspectable: research you can trace, AI work you can review, and a fly whose every move comes from a model of a real brain.</p>
-      <dl class="facts">
-        <div><dt>Role</dt><dd>Senior Software Developer, TD Payments Technology</dd></div>
-        <div><dt>Study</dt><dd>Master of Management Analytics, Smith School of Business</dd></div>
-        <div><dt>Focus</dt><dd>Payment systems · AI-assisted engineering · Analytics</dd></div>
-        <div><dt>Based in</dt><dd>Toronto, Canada</dd></div>
-      </dl>
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="poster" src="hero/poster.jpg" alt="" aria-hidden="true">
+    <div id="specimen" class="specimen" role="img" aria-label="A rotating 3D view of one fruit fly's brain and nerve cord, drawn from mapped cell positions and traced neurons"></div>
+    <div class="wrap" style="width:100%">
+      <div class="hero-copy">
+        <h1 id="hero-title">Prototypes that show their work.</h1>
+        <p>A research app that cites its sources, an AI workspace that waits for approval before it acts, and a fruit fly whose every move comes from a model of a real brain.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See the projects</a>
+          <a class="btn" href="perch/">Meet the fly</a>
+        </div>
+      </div>
     </div>
-  </div>
+    <figure class="readout">
+      <div class="scale" aria-hidden="true"><span id="scale-bar"></span><span>100 µm</span></div>
+      <figcaption><b>One fruit fly's brain and nerve cord</b><br>40,000 of 169,078 mapped cells and 641 traced neurons, BANC v888<span class="more"><br>Drag to turn it. The moving pulses are illustrative.</span></figcaption>
+    </figure>
+  </section>
 
   <section id="projects">
     <div class="wrap">
-      <div class="sec-head">
-        <div><div class="label">Selected projects</div><h2>Three working prototypes</h2></div>
-        <p>Each one can be opened and inspected.</p>
+      <div class="sec">
+        <h2>Projects</h2>
+        <p>Each one is a working prototype you can open, and each one makes its reasoning visible.</p>
       </div>
-      <table class="index">
-        <thead><tr><th>#</th><th>Project</th><th class="hide-m">Domain</th><th class="hide-m">Stack</th><th class="hide-m">Status</th><th></th></tr></thead>
-        <tbody>
-          <tr><td>01</td><td><a class="name" href="#scorevest">ScoreVest</a></td><td class="hide-m">Financial research</td><td class="hide-m">Java, Spring Boot, PostgreSQL, SwiftUI</td><td class="hide-m"><span class="pill muted">iOS prototype · source private</span></td><td class="go"><a href="scorevest/">Case study →</a></td></tr>
-          <tr><td>02</td><td><a class="name" href="#diana">DIANA</a></td><td class="hide-m">Governed AI workflows</td><td class="hide-m">React, Three.js, Rust, SQLite</td><td class="hide-m"><span class="pill">Live demo · synthetic data</span></td><td class="go"><a href="diana/">Live demo →</a></td></tr>
-          <tr><td>03</td><td><a class="name" href="#perch">Perch</a></td><td class="hide-m">Connectome simulation</td><td class="hide-m">JavaScript, three.js, Python, Numba</td><td class="hide-m"><span class="pill">Live demo · source public</span></td><td class="go"><a href="perch/">Live demo →</a></td></tr>
-        </tbody>
-      </table>
 
-      <article class="project" id="scorevest">
+      <article class="proj" id="scorevest">
         <div>
-          <div class="label"><b>01</b> · Financial research</div>
           <h3>ScoreVest</h3>
-          <p class="tagline">Investment research with evidence you can follow.</p>
-          <p class="body">A research and portfolio platform combining cited market discussion, sentiment, and risk and return analytics. Reproducible simulations account for trading costs and guard against future information distorting historical results.</p>
-          <dl class="spec">
-            <dt>Stack</dt><dd>Java / Spring Boot · PostgreSQL · SwiftUI</dd>
-            <dt>Scope</dt><dd>Native iOS research prototype; earlier working build</dd>
-            <dt>Data</dt><dd>Sample development data; no personal holdings or performance claims</dd>
-            <dt>Source</dt><dd>Private</dd>
+          <p class="lead">Investment research that cites its sources.</p>
+          <p class="body">Moves from a market briefing to the sources, coverage and uncertainty behind a ticker's story. Sentiment, risk and return analytics sit next to the evidence, and simulations account for trading costs without letting future information leak into the past.</p>
+          <dl class="facts">
+            <dt>Built with</dt><dd>Java, Spring Boot, PostgreSQL, SwiftUI</dd>
+            <dt>Shows</dt><dd>Source quality, confidence and evidence gaps</dd>
+            <dt>Status</dt><dd>iOS prototype with sample data; source private</dd>
           </dl>
-          <div class="actions"><a class="btn primary" href="scorevest/">Case study <span class="arr">→</span></a></div>
+          <div class="actions"><a class="btn primary" href="scorevest/">Read the case study</a></div>
         </div>
-        <figure class="media">
-          <a href="scorevest/"><img src="images/scorevest-screenshot-presentation.jpg" alt="ScoreVest iOS prototype: market briefing and ticker evidence screens" loading="lazy" width="1280" height="900"></a>
-          <figcaption><span class="mono">Working SwiftUI build</span><span>Market briefing → ticker evidence</span></figcaption>
+        <figure class="plate">
+          <a class="frame" href="scorevest/"><img src="images/scorevest-screenshot-presentation.jpg" alt="ScoreVest on iPhone: a market briefing and a ticker's evidence review" loading="lazy" width="1280" height="900"></a>
+          <figcaption>Captured from the working SwiftUI build. Figures are sample data.</figcaption>
         </figure>
       </article>
 
-      <article class="project" id="diana">
+      <article class="proj" id="diana">
         <div>
-          <div class="label"><b>02</b> · Governed AI</div>
           <h3>DIANA</h3>
-          <p class="tagline">A workspace for AI work you can inspect.</p>
-          <p class="body">A Holo interface for project context, evidence review, approvals and recovery. A companion privacy workbench applies sensitivity rules, redacts identifiers and generates an inspectable decision receipt.</p>
-          <dl class="spec">
-            <dt>Stack</dt><dd>React · Three.js · Rust / SQLite foundation</dd>
-            <dt>Scope</dt><dd>Interface and privacy prototype, 8 example workflows</dd>
-            <dt>Data</dt><dd>Fictional Meridian launch; synthetic sources only</dd>
-            <dt>Runs</dt><dd>In the browser; no live model, ledger or external actions</dd>
+          <p class="lead">An AI workspace where nothing happens without review.</p>
+          <p class="body">Keeps project context, source evidence, delegated reviews and approval checkpoints in one view, so you can see why a recommendation was made before you approve it. A companion workbench classifies sensitive text, redacts identifiers and issues a decision receipt.</p>
+          <dl class="facts">
+            <dt>Built with</dt><dd>React, Three.js, Rust and SQLite foundation</dd>
+            <dt>Shows</dt><dd>Provenance, approval holds and what still needs review</dd>
+            <dt>Status</dt><dd>Live demo with 8 fictional workflows; no live model</dd>
           </dl>
           <div class="actions">
-            <a class="btn primary" href="diana/">Live demo <span class="arr">→</span></a>
-            <a class="btn" href="privacy/">Privacy workbench <span class="arr">→</span></a>
+            <a class="btn primary" href="diana/">Open the live demo</a>
+            <a class="btn" href="privacy/">Try the privacy workbench</a>
           </div>
         </div>
-        <figure class="media">
-          <a href="diana/"><img src="images/diana-screenshot-presentation.jpg" alt="DIANA workspace: launch brief, evidence and approval checkpoints" loading="lazy" width="1280" height="1130"></a>
-          <figcaption><span class="mono">Public demo capture</span><span>Evidence → review → approval</span></figcaption>
+        <figure class="plate">
+          <a class="frame" href="diana/"><img src="images/diana-screenshot-presentation.jpg" alt="DIANA workspace showing a launch brief, its evidence and approval checkpoints" loading="lazy" width="1280" height="1130"></a>
+          <figcaption>Captured from the public demo. All workflows are fictional.</figcaption>
         </figure>
       </article>
 
-      <article class="project" id="perch">
+      <article class="proj" id="perch">
         <div>
-          <div class="label"><b>03</b> · Connectome simulation</div>
           <h3>Perch</h3>
-          <p class="tagline">A pet fruit fly driven by a model of a real fly's brain.</p>
-          <p class="body">Raise one fruit fly over 50 days. Every reaction replays a recorded trial of a spiking model run on the BANC connectome, the mapped brain and nerve cord of one real fly. Open any reaction to watch it travel through her brain in 3D.</p>
-          <div class="stats">
+          <p class="lead">A pet fruit fly driven by a model of a real fly's brain.</p>
+          <p class="body">Raise one fly over 50 days. Every reaction replays a recorded trial of a spiking model run on the mapped wiring of a real fly, and any reaction opens into a 3D view of the cells that fired. The specimen at the top of this page comes from the same data.</p>
+          <div class="numbers">
             <div><b>169,078</b><span>neurons</span></div>
-            <div><b>3,542</b><span>recorded trials</span></div>
+            <div><b>3,542</b><span>trials</span></div>
             <div><b>3</b><span>sister flies</span></div>
             <div><b>23</b><span>situations</span></div>
           </div>
-          <dl class="spec">
-            <dt>Stack</dt><dd>JavaScript · three.js / WebGL · Python / Numba (model runs)</dd>
-            <dt>Model</dt><dd>Leaky integrate-and-fire network on BANC v888 wiring, 0.1 ms steps</dd>
-            <dt>Labels</dt><dd>Every claim tagged BRAIN, REPLAY or DESIGN</dd>
+          <dl class="facts">
+            <dt>Built with</dt><dd>JavaScript, three.js, Python, Numba</dd>
+            <dt>Shows</dt><dd>The path from a sense to a movement, cell by cell</dd>
           </dl>
           <div class="actions">
-            <a class="btn primary" href="perch/">Live demo <span class="arr">→</span></a>
-            <a class="btn" href="perch/#how">How it works <span class="arr">→</span></a>
+            <a class="btn primary" href="perch/">Open Perch</a>
+            <a class="btn" href="perch/#how">How it works</a>
           </div>
         </div>
-        <figure class="media">
-          <a href="perch/"><img src="images/perch-overview.jpg" alt="Perch: her jar, a reaction explained, the reaction replayed in her brain, and her 3D body" loading="lazy" width="1940" height="1082"></a>
-          <figcaption><span class="mono">Live app captures</span><span>Jar · reaction · brain replay · 3D body</span></figcaption>
+        <figure class="plate">
+          <a class="frame" href="perch/"><img src="images/perch-overview.jpg" alt="Perch: her jar, a reaction explained, the same reaction replayed in her brain, and her 3D body" loading="lazy" width="1940" height="1082"></a>
+          <figcaption>Captured from the live app: jar, reaction, brain replay, 3D body.</figcaption>
         </figure>
       </article>
     </div>
   </section>
 
-  <section id="more" style="padding-top:0">
+  <section id="also" style="padding-top:0">
     <div class="wrap">
-      <div class="sec-head"><div><div class="label">Other work</div><h2>More to explore</h2></div></div>
-      <div class="row">
-        <img src="images/spectateai-working-overview.png" alt="SpectateAI village simulation overview" loading="lazy" width="1280" height="800">
+      <div class="also">
+        <img src="images/spectateai-working-overview.png" alt="SpectateAI village simulation" loading="lazy" width="1280" height="800">
         <div>
-          <h4>SpectateAI</h4>
-          <p>A multi-agent village simulation in Godot. Twelve residents act on needs, traits, relationships and imperfect beliefs; playback and a belief lens show what each one thinks happened.</p>
+          <h3>Also built: SpectateAI</h3>
+          <p>A village simulation in Godot where twelve residents act on needs, relationships and imperfect beliefs. A belief lens shows what each one thinks happened.</p>
         </div>
-        <a class="btn" href="spectate/">Playable demo <span class="arr">→</span></a>
+        <a class="btn" href="spectate/">Play the demo</a>
       </div>
     </div>
   </section>
@@ -147,9 +135,13 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Ege Guney · <a href="mailto:ege.guney@queensu.ca">ege.guney@queensu.ca</a></span>
-    <span><a href="https://github.com/Ege-Guney" target="_blank" rel="noopener">GitHub</a> · <a href="https://linkedin.com/in/egeguney" target="_blank" rel="noopener">LinkedIn</a> · Perch uses BANC data (CC BY 4.0); see <a href="perch/#credits">credits</a></span>
+    <span>Ege Guney &nbsp; <a href="https://github.com/Ege-Guney" target="_blank" rel="noopener">GitHub</a></span>
+    <span>Brain data: BANC v888 (Bates et al. 2026), <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. <a href="perch/#credits">Full credits</a></span>
   </div>
 </footer>
+
+<script src="hero/hero-data.js"></script>
+<script>setTimeout(function(){if(!document.documentElement.classList.contains("webgl-ready"))document.documentElement.classList.add("no-webgl")},6000)</script>
+<script type="module" src="hero/hero.js"></script>
 </body>
 </html>
