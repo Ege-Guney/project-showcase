@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ege Guney · Software Engineering and Analytics</title>
+<meta name="description" content="Selected projects by Ege Guney: ScoreVest (financial research), DIANA (governed AI workflows) and Perch (a pet fruit fly driven by a connectome model).">
+<meta property="og:title" content="Ege Guney · Selected projects">
+<meta property="og:description" content="ScoreVest, DIANA and Perch: research tools, governed AI and connectome simulation.">
+<meta property="og:image" content="images/perch-overview.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./">Ege Guney<span>Software engineering · Analytics</span></a>
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a class="opt" href="#more">Other work</a>
+      <a href="https://github.com/Ege-Guney" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://linkedin.com/in/egeguney" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div class="label"><b>●</b> Agentic software engineering · Strategic analytics</div>
+      <h1>Ege Guney</h1>
+      <p class="lede">I build enterprise payment systems at TD and independent prototypes that make complex systems inspectable: research you can trace, AI work you can review, and a fly whose every move comes from a model of a real brain.</p>
+      <dl class="facts">
+        <div><dt>Role</dt><dd>Senior Software Developer, TD Payments Technology</dd></div>
+        <div><dt>Study</dt><dd>Master of Management Analytics, Smith School of Business</dd></div>
+        <div><dt>Focus</dt><dd>Payment systems · AI-assisted engineering · Analytics</dd></div>
+        <div><dt>Based in</dt><dd>Toronto, Canada</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="label">Selected projects</div><h2>Three working prototypes</h2></div>
+        <p>Each one can be opened and inspected.</p>
+      </div>
+      <table class="index">
+        <thead><tr><th>#</th><th>Project</th><th class="hide-m">Domain</th><th class="hide-m">Stack</th><th class="hide-m">Status</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>01</td><td><a class="name" href="#scorevest">ScoreVest</a></td><td class="hide-m">Financial research</td><td class="hide-m">Java, Spring Boot, PostgreSQL, SwiftUI</td><td class="hide-m"><span class="pill muted">iOS prototype · source private</span></td><td class="go"><a href="scorevest/">Case study →</a></td></tr>
+          <tr><td>02</td><td><a class="name" href="#diana">DIANA</a></td><td class="hide-m">Governed AI workflows</td><td class="hide-m">React, Three.js, Rust, SQLite</td><td class="hide-m"><span class="pill">Live demo · synthetic data</span></td><td class="go"><a href="diana/">Live demo →</a></td></tr>
+          <tr><td>03</td><td><a class="name" href="#perch">Perch</a></td><td class="hide-m">Connectome simulation</td><td class="hide-m">JavaScript, three.js, Python, Numba</td><td class="hide-m"><span class="pill">Live demo · source public</span></td><td class="go"><a href="perch/">Live demo →</a></td></tr>
+        </tbody>
+      </table>
+
+      <article class="project" id="scorevest">
+        <div>
+          <div class="label"><b>01</b> · Financial research</div>
+          <h3>ScoreVest</h3>
+          <p class="tagline">Investment research with evidence you can follow.</p>
+          <p class="body">A research and portfolio platform combining cited market discussion, sentiment, and risk and return analytics. Reproducible simulations account for trading costs and guard against future information distorting historical results.</p>
+          <dl class="spec">
+            <dt>Stack</dt><dd>Java / Spring Boot · PostgreSQL · SwiftUI</dd>
+            <dt>Scope</dt><dd>Native iOS research prototype; earlier working build</dd>
+            <dt>Data</dt><dd>Sample development data; no personal holdings or performance claims</dd>
+            <dt>Source</dt><dd>Private</dd>
+          </dl>
+          <div class="actions"><a class="btn primary" href="scorevest/">Case study <span class="arr">→</span></a></div>
+        </div>
+        <figure class="media">
+          <a href="scorevest/"><img src="images/scorevest-screenshot-presentation.jpg" alt="ScoreVest iOS prototype: market briefing and ticker evidence screens" loading="lazy" width="1280" height="900"></a>
+          <figcaption><span class="mono">Working SwiftUI build</span><span>Market briefing → ticker evidence</span></figcaption>
+        </figure>
+      </article>
+
+      <article class="project" id="diana">
+        <div>
+          <div class="label"><b>02</b> · Governed AI</div>
+          <h3>DIANA</h3>
+          <p class="tagline">A workspace for AI work you can inspect.</p>
+          <p class="body">A Holo interface for project context, evidence review, approvals and recovery. A companion privacy workbench applies sensitivity rules, redacts identifiers and generates an inspectable decision receipt.</p>
+          <dl class="spec">
+            <dt>Stack</dt><dd>React · Three.js · Rust / SQLite foundation</dd>
+            <dt>Scope</dt><dd>Interface and privacy prototype, 8 example workflows</dd>
+            <dt>Data</dt><dd>Fictional Meridian launch; synthetic sources only</dd>
+            <dt>Runs</dt><dd>In the browser; no live model, ledger or external actions</dd>
+          </dl>
+          <div class="actions">
+            <a class="btn primary" href="diana/">Live demo <span class="arr">→</span></a>
+            <a class="btn" href="privacy/">Privacy workbench <span class="arr">→</span></a>
+          </div>
+        </div>
+        <figure class="media">
+          <a href="diana/"><img src="images/diana-screenshot-presentation.jpg" alt="DIANA workspace: launch brief, evidence and approval checkpoints" loading="lazy" width="1280" height="1130"></a>
+          <figcaption><span class="mono">Public demo capture</span><span>Evidence → review → approval</span></figcaption>
+        </figure>
+      </article>
+
+      <article class="project" id="perch">
+        <div>
+          <div class="label"><b>03</b> · Connectome simulation</div>
+          <h3>Perch</h3>
+          <p class="tagline">A pet fruit fly driven by a model of a real fly's brain.</p>
+          <p class="body">Raise one fruit fly over 50 days. Every reaction replays a recorded trial of a spiking model run on the BANC connectome, the mapped brain and nerve cord of one real fly. Open any reaction to watch it travel through her brain in 3D.</p>
+          <div class="stats">
+            <div><b>169,078</b><span>neurons</span></div>
+            <div><b>3,542</b><span>recorded trials</span></div>
+            <div><b>3</b><span>sister flies</span></div>
+            <div><b>23</b><span>situations</span></div>
+          </div>
+          <dl class="spec">
+            <dt>Stack</dt><dd>JavaScript · three.js / WebGL · Python / Numba (model runs)</dd>
+            <dt>Model</dt><dd>Leaky integrate-and-fire network on BANC v888 wiring, 0.1 ms steps</dd>
+            <dt>Labels</dt><dd>Every claim tagged BRAIN, REPLAY or DESIGN</dd>
+          </dl>
+          <div class="actions">
+            <a class="btn primary" href="perch/">Live demo <span class="arr">→</span></a>
+            <a class="btn" href="perch/#how">How it works <span class="arr">→</span></a>
+          </div>
+        </div>
+        <figure class="media">
+          <a href="perch/"><img src="images/perch-overview.jpg" alt="Perch: her jar, a reaction explained, the reaction replayed in her brain, and her 3D body" loading="lazy" width="1940" height="1082"></a>
+          <figcaption><span class="mono">Live app captures</span><span>Jar · reaction · brain replay · 3D body</span></figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <section id="more" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><div><div class="label">Other work</div><h2>More to explore</h2></div></div>
+      <div class="row">
+        <img src="images/spectateai-working-overview.png" alt="SpectateAI village simulation overview" loading="lazy" width="1280" height="800">
+        <div>
+          <h4>SpectateAI</h4>
+          <p>A multi-agent village simulation in Godot. Twelve residents act on needs, traits, relationships and imperfect beliefs; playback and a belief lens show what each one thinks happened.</p>
+        </div>
+        <a class="btn" href="spectate/">Playable demo <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Ege Guney · <a href="mailto:ege.guney@queensu.ca">ege.guney@queensu.ca</a></span>
+    <span><a href="https://github.com/Ege-Guney" target="_blank" rel="noopener">GitHub</a> · <a href="https://linkedin.com/in/egeguney" target="_blank" rel="noopener">LinkedIn</a> · Perch uses BANC data (CC BY 4.0); see <a href="perch/#credits">credits</a></span>
+  </div>
+</footer>
+</body>
+</html>
