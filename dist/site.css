@@ -142,3 +142,8 @@ footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--m
 footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 footer a { color: var(--ink-2); text-decoration: none; }
 footer a:hover { color: var(--ink); }
+
+/* back link in project-page headers */
+.back { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 600; font-size: 15.5px; text-decoration: none; color: var(--ink); }
+.back svg { width: 16px; height: 16px; flex: none; }
+.back:hover { color: var(--signal-2); }
