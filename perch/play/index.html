@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Perch · Play</title>
+<meta name="theme-color" content="#08101f">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<style>
+  @font-face { font-family: "Instrument Sans"; src: url("../../fonts/instrument-sans.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
+  html, body { margin: 0; height: 100%; background: #08101f; }
+  body { display: flex; flex-direction: column; height: 100dvh; overflow: hidden; font: 600 14.5px/1 "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+  .bar { flex: none; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 46px; padding: env(safe-area-inset-top, 0px) max(16px, env(safe-area-inset-right)) 0 max(16px, env(safe-area-inset-left)); border-bottom: 1px solid #1a2843; box-sizing: border-box; }
+  .bar a { color: #eef3fb; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; }
+  .bar a:hover { color: #ff86a6; }
+  .bar a:focus-visible { outline: 2px solid #ff5c8a; outline-offset: 2px; border-radius: 4px; }
+  .bar svg { width: 16px; height: 16px; }
+  .bar .right { display: flex; gap: 18px; }
+  .bar .right a { color: #7d8db0; font-weight: 500; }
+  .stage { flex: 1; display: flex; justify-content: center; background: #000; min-height: 0; }
+  iframe { border: 0; width: 100%; height: 100%; display: block; background: #f1ece2; }
+  @media (min-width: 761px) { .stage { background: #08101f; padding: 18px 0; } iframe { width: 430px; border-radius: 28px; border: 1px solid #2a3c5f; } }
+</style>
+</head>
+<body>
+<nav class="bar" aria-label="Portfolio">
+  <a href="../"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to Perch</a>
+  <span class="right"><a href="../../#projects">All projects</a></span>
+</nav>
+<main class="stage">
+  <iframe id="app" title="Perch, a pet fruit fly" allow="fullscreen; accelerometer; gyroscope"></iframe>
+</main>
+<script>
+  // pass this page's own options (for example ?tour=1) through to the app
+  var q = location.search.replace(/^\?/, '');
+  document.getElementById('app').src = '../app/?embed' + (q ? '&' + q : '') + location.hash;
+</script>
+</body>
+</html>
